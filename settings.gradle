@@ -1,2 +1,3 @@
 rootProject.name = 'kesps'
-
+include 'api'
+include 'scraper'
