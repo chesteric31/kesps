@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      database: kesps
+      host: localhost
+      port: 27017
+server:
+  port: 8088

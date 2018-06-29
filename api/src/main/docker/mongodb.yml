@@ -1,4 +1,4 @@
-version: '2'
+version: '3.6'
 services:
     kesps-api-mongodb:
         image: mongo:latest
@@ -6,8 +6,9 @@ services:
         environment:
           # - MONGO_DATA_DIR=/data/db
           # - MONGO_LOG_DIR=/dev/null
-          - MONGODB_USER="kesps"
-          - MONGODB_PASS="kesps"
+          - MONGO_INITDB_USER="kesps"
+          - MONGO_INITDB_PASS="kesps"
+          - MONGO_INITDB_DATABASE="kesps"
 #        volumes:
 #          - ./data/db:/data/db
         ports:
